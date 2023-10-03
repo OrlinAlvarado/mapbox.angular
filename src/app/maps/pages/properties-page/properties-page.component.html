@@ -12,6 +12,7 @@
     <div class="row">
       <!-- Houses -->
       <div *ngFor="let house of houses" class="col-4 mb-2">
+
         <div class="card">
           <!-- <img src="..." class="card-img-top" alt=""> -->
           <map-mini-map [lngLat]="house.lngLat" />
@@ -20,6 +21,12 @@
             <p class="card-text">{{ house.description }}</p>
           </div>
         </div>
+
+      </div>
+
+      <div class="col-4 mb-2">
+        Alone component
+        <counter-alone />
       </div>
     </div>
   </div>
